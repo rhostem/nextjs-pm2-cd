@@ -1,0 +1,21 @@
+{
+  "name": "custom-server-express",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start-prod": "cross-env NODE_ENV=production node server.js",
+    "start": "pm2 reload ecosystem.config.js --only app --env production"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "next": "latest",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "pm2": "^4.1.2",
+    "prettier": "^1.18.2"
+  }
+}
