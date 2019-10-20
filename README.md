@@ -1,5 +1,5 @@
 # nextjs-pm2-cd
 
-Example of continuous deployment of next app with pm2
+Example of continuous deployment of Next.js app with [PM2](http://pm2.keymetrics.io/).
 
-This repository is baseed on [next.js/examples/custom-server-express at canary · zeit/next.js](https://github.com/zeit/next.js/tree/canary/examples/custom-server-express)
+This repository is based on [next.js/examples/custom-server-express](https://github.com/zeit/next.js/tree/canary/examples/custom-server-express).
