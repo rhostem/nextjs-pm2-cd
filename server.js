@@ -11,7 +11,7 @@ app.prepare().then(() => {
 
   let isAppGoingToBeClosed = false // SIGINT 시그널을 받았는지 여부. 앱이 곧 종료될 것임을 의미한다.
 
-  server.use(function(res, res, next) {
+  server.use(function(req, res, next) {
     // 프로세스 종료 예정이라면 리퀘스트를 처리하지 않는다
     if (isAppGoingToBeClosed) {
       res.set('Connection', 'close')
